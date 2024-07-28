@@ -27,7 +27,7 @@
             <nav class="navigation">
                <ul class="navigation__list">
                   <li>
-                     <a href="#header" data-text="Main">Main</a>
+                     <a href="#first" data-text="Main">Main</a>
                   </li>
                   <li>
                      <a href="#about" data-text="About">About</a>
@@ -40,13 +40,15 @@
                   </li>
                </ul>
             </nav>
+
+            <!-- burger menu -->
+            <button class="burger" role="button" aria-label="Открыть мобильное меню">
+               <div class="burger__menu">
+                  <span></span>
+               </div>
+            </button>
          </div>
-         <!-- burger menu -->
-         <div class="burger">
-            <a href="" aria-label="Открыть мобильное меню" class="burger__menu popup-link">
-               <span></span>
-            </a>
-         </div>
+
       </div>
 
    </div>
@@ -79,12 +81,11 @@
    </div>
 
    <div class="section-hero__santa">
-      <div class="section-hero__santa-cloud anim-items">
+      <div class="section-hero__santa-cloud anim-items anim-no-hide">
          <img src="img/img/cloud.svg" width="260" height="166" alt="" title="">
          <div class="section-hero__santa-text"> How how how !!! Like it? Scroll down for more !</div>
-
       </div>
-      <img src="img/img/santa.png" width="1000" height="581" alt="santa image" title="santa">
+      <img src="img/img/santa.png" class="section-hero__santa-img" width="1000" height="581" alt="santa image" title="santa">
    </div>
 
    <div class="stars" id="stars"></div>
@@ -95,9 +96,10 @@
       <img src="img/img/second-bg.jpg" width="" height="" alt="" title="">
    </div>
 
-   <div class="section-title">
-      <div class="container">
-         <div class="section-title__body">
+   <div class="container">
+      <div class="section-title">
+
+         <div class="section-title__tabs-wrapper">
             <div class="section-title__text">
                <h2 class="section-title__title">At least somewhere you can feel new year atmosphere</h2>
                <div class="section-title__subtitle">Choose your present:</div>
@@ -111,18 +113,54 @@
                      <img src="img/img/new-year-sock-2.png" width="" height="" alt="" title="">
                   </div>
 
-                  <div class="tab__item tab-button" data-tab-name="sock">
+                  <div class="tab__item tab-button" data-tab-name="back">
                      <img src="img/img/new-year-sock-3.png" width="" height="" alt="" title="">
+                  </div>
+               </div>
+            </div>
+
+            <div class="section-title__blocks block">
+               <div class="block__item tab-block tab-active sock">
+                  <div class="block__inner">
+                     <div class="block__text">
+                        <h3 class="block__text-title">Best sock ever</h3>
+                        <div class="block__text-body">Reuglar sock have no present inside Lorem Ipsum is simply dumm y
+                           text of the printing and types etting industry. Lorem</div>
+                     </div>
+                     <div class="block__img">
+                        <img src="img/img/new-year-sock-1.png" width="70" height="120" alt="" title="">
+                     </div>
+                  </div>
+               </div>
+
+               <div class="block__item tab-block caps">
+                  <div class="block__inner">
+                     <div class="block__text">
+                        <h3 class="block__text-title">Best sock ever2</h3>
+                        <div class="block__text-body">Reuglar sock have no present inside Lorem Ipsum is simply dumm y
+                           text of the printing and types etting industry. Lorem</div>
+                     </div>
+                     <div class="block__img">
+                        <img src="img/img/new-year-sock-2.png" width="" height="" alt="" title="">
+                     </div>
+                  </div>
+               </div>
+               <div class="block__item tab-block back">
+                  <div class="block__inner">
+                     <div class="block__text">
+                        <h3 class="block__text-title">Best sock ever3</h3>
+                        <div class="block__text-body">Reuglar sock have no present inside Lorem Ipsum is simply dumm y
+                           text of the printing and types etting industry. Lorem</div>
+                     </div>
+                     <div class="block__img">
+                        <img src="img/img/new-year-sock-3.png" width="" height="" alt="" title="">
+                     </div>
                   </div>
                </div>
             </div>
          </div>
 
-         <div class="section-title__blocks block">
-
-         </div>
       </div>
-
    </div>
 </section>
          <section class="section-third" id="third">
