@@ -461,7 +461,7 @@ select {
   animation: sequentialBlink 2s linear infinite;
 }
 
-.section-second {
+section {
   position: relative;
 }
 
@@ -584,8 +584,8 @@ select {
 /* @media (min-width: 320px) */
 /* @media (min-width: 520px) */
 /* @media (min-width: 768px) */
-/* @media (min-width: 960px) */
-@media (min-width: 960px) {
+/* @media (min-width: 961px) */
+@media (min-width: 961px) {
   body {
     overflow: hidden;
   }
@@ -713,7 +713,7 @@ select {
   }
   .section-title__blocks {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 70px;
   }
   .section-title__tab {
     justify-content: center;
