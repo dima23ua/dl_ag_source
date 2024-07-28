@@ -27,16 +27,16 @@
             <nav class="navigation">
                <ul class="navigation__list">
                   <li>
-                     <a href="#header">Main</a>
+                     <a href="#header" data-text="Main">Main</a>
                   </li>
                   <li>
-                     <a href="#about">About</a>
+                     <a href="#about" data-text="About">About</a>
                   </li>
                   <li>
-                     <a href="#products">Products</a>
+                     <a href="#products" data-text="Products">Products</a>
                   </li>
                   <li>
-                     <a href="#contacts">Contacts</a>
+                     <a href="#contacts" data-text="Contacts">Contacts</a>
                   </li>
                </ul>
             </nav>
@@ -54,7 +54,7 @@
 
       <!-- main content -->
       <main class="main">
-         <section class="section-hero">
+         <section class="section-hero" id="first">
    <div class="section-hero__snowflake" id="paralax">
       <img src="img/img/snowflake.svg" width="447" height="448" alt="snowflake icon" title="snowflake">
    </div>
@@ -62,45 +62,70 @@
 
    <div class="section-title">
       <div class="container">
-         <h1 class="section-title__title">Main Site Title</h1>
-         <div class="section-title__subtitle">Lorem ipsum descripsum</div>
-         <div class="section-title__btn">
-            <!-- Primary Btn -->
-            <div class="primary-btn">
-               <a href="#" role="" aria-label="" class="primary-btn__link">Call to action</a>
+         <div class="section-title__body">
+            <h1 class="section-title__title">Main Site Title</h1>
+            <div class="section-title__subtitle">Lorem ipsum descripsum</div>
+            <div class="section-title__btn">
+               <!-- Primary Btn -->
+               <div class="primary-btn">
+                  <a href="#third" role="" aria-label="" class="primary-btn__link">Call to action</a>
+               </div>
             </div>
+            <a href="#second" class="section-title__arrow">
+               <img src="img/img/arrow.svg" width="24" height="24" alt="arrow icon" title="Arrow">
+            </a>
          </div>
       </div>
    </div>
 
    <div class="section-hero__santa">
+      <div class="section-hero__santa-cloud anim-items">
+         <img src="img/img/cloud.svg" width="260" height="166" alt="" title="">
+         <div class="section-hero__santa-text"> How how how !!! Like it? Scroll down for more !</div>
+
+      </div>
       <img src="img/img/santa.png" width="1000" height="581" alt="santa image" title="santa">
    </div>
 
    <div class="stars" id="stars"></div>
 
 </section>
-         <section class="section-second">
+         <section class="section-second" id="second">
    <div class="section-bg">
       <img src="img/img/second-bg.jpg" width="" height="" alt="" title="">
    </div>
-   
-   <div class="container">
 
-      <div class="section-title">
-         <h2 class="section-title__title">At least somewhere you can feel new year atmosphere</h2>
-         <div class="section-title__subtitle">Choose your present:</div>
-         <div class="section-title__btn">
-            <!-- Primary Btn -->
-            <div class="primary-btn">
-              <a href="#" role="" aria-label="" class="primary-btn__link">Call to action</a>
+   <div class="section-title">
+      <div class="container">
+         <div class="section-title__body">
+            <div class="section-title__text">
+               <h2 class="section-title__title">At least somewhere you can feel new year atmosphere</h2>
+               <div class="section-title__subtitle">Choose your present:</div>
+
+               <div class="section-title__tab tab">
+                  <div class="tab__item tab-button tab-active" data-tab-name="sock">
+                     <img src="img/img/new-year-sock-1.png" width="" height="" alt="" title="">
+                  </div>
+
+                  <div class="tab__item tab-button" data-tab-name="caps">
+                     <img src="img/img/new-year-sock-2.png" width="" height="" alt="" title="">
+                  </div>
+
+                  <div class="tab__item tab-button" data-tab-name="sock">
+                     <img src="img/img/new-year-sock-3.png" width="" height="" alt="" title="">
+                  </div>
+               </div>
             </div>
+         </div>
+
+         <div class="section-title__blocks block">
+
          </div>
       </div>
 
    </div>
 </section>
-         <section class="section-third">
+         <section class="section-third" id="third">
    <div class="section-bg">
       <img src="img/img/third-bg.jpg" width="" height="" alt="" title="">
    </div>

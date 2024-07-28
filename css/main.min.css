@@ -26,7 +26,6 @@ body {
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
-  overflow-x: hidden;
   font-family: var(--second-family);
   overflow-anchor: none;
   font-size: 16px;
@@ -46,6 +45,7 @@ html.lock {
 
 .container {
   width: 100%;
+  height: 100%;
   max-width: 1380px;
   margin: 0 auto;
   padding: 0 15px;
@@ -72,7 +72,14 @@ h6 {
 }
 
 h1 {
-  font-size: calc(44px + 20 * (100vw / 1380));
+  font-size: calc(42px + 30 * (100vw / 1380));
+  font-family: var(--second-family);
+  font-weight: 400;
+  color: #fff;
+}
+
+h2 {
+  font-size: calc(42px + 14 * (100vw / 1380));
   font-family: var(--second-family);
   font-weight: 400;
   color: #fff;
@@ -146,7 +153,7 @@ select {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 10;
 }
 
 .header-content {
@@ -160,15 +167,31 @@ select {
 }
 .navigation__list li {
   margin-left: 55px;
+  position: relative;
+  overflow: hidden;
 }
 .navigation__list li:first-child {
   margin-left: 0;
+}
+.navigation__list li:hover a {
+  transform: translateY(-100%);
 }
 .navigation__list li a {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   color: #fff;
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+.navigation__list li a::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 100%;
+  color: red;
+  transform: translateY(0);
 }
 
 .burger {
@@ -243,16 +266,19 @@ select {
   background: #141429;
 }
 .section-hero__snowflake {
+  display: flex;
   position: absolute;
   left: -185px;
   bottom: -20px;
-  /* Начальное положение, соответствующее bottom: -20px */
   width: 447px;
   height: 448px;
   animation: rotate 45s linear infinite;
   z-index: 3;
   transition: transform 0.5s ease-out;
-  /* Добавляем плавность изменения */
+}
+.section-hero__snowflake img {
+  width: 100%;
+  height: 100%;
 }
 .section-hero__santa {
   position: absolute;
@@ -261,6 +287,34 @@ select {
   width: 1000px;
   height: 581px;
   z-index: 3;
+}
+.section-hero__santa-cloud {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+.section-hero__santa-cloud.active {
+  opacity: 1;
+  visibility: visible;
+  transition: all 1s ease 3s;
+}
+.section-hero__santa-text {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  margin-left: -6px;
+  margin-top: -5px;
 }
 
 @keyframes rotate {
@@ -300,11 +354,33 @@ select {
     transform: translateY(100vh);
   }
 }
+.section-title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 4;
+}
+.section-title__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+.section-title__arrow {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 34px;
+  height: 34px;
+}
 .section-title__subtitle {
   margin-top: 20px;
   font-family: var(--second-family);
   font-weight: 400;
-  font-size: 38px;
+  font-size: calc(22px + 16 * (100vw / 1380));
   color: #fff;
 }
 .section-title__btn {
@@ -313,6 +389,8 @@ select {
 
 .primary-btn {
   display: flex;
+  position: relative;
+  z-index: 5;
 }
 .primary-btn__link {
   display: flex;
@@ -323,6 +401,12 @@ select {
   color: #fff;
   border: 2px solid #fff;
   border-radius: 20px 20px 20px 0;
+  transition: all 0.3s ease 0s;
+}
+.primary-btn__link:hover {
+  color: #141429;
+  background-color: #fff;
+  border: 2px solid #141429;
 }
 
 /* Анимация для случайного мигания */
@@ -370,6 +454,38 @@ select {
   object-fit: cover;
 }
 
+.section-title__tab {
+  margin-top: 30px;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+}
+.tab__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 5px solid var(--white);
+  border-radius: 100%;
+  padding: 20px;
+  cursor: pointer;
+  background-color: var(--white);
+  transition: all 0.3s ease 0s;
+  margin-left: 30px;
+}
+.tab__item:first-child {
+  margin-left: 0;
+}
+.tab__item:hover {
+  background-color: transparent;
+}
+.tab__item.tab-active {
+  background-color: transparent;
+}
+
 .error {
   display: flex;
   justify-content: center;
@@ -395,6 +511,10 @@ select {
 /* @media (min-width: 768px) */
 /* @media (min-width: 960px) */
 @media (min-width: 960px) {
+  body {
+    overflow: hidden;
+  }
+
   section {
     display: flex;
     align-items: center;
@@ -412,42 +532,93 @@ select {
   h1 {
     font-size: 72px;
   }
+
+  h2 {
+    font-size: 56px;
+  }
+
+  .section-title__subtitle {
+    font-size: 38px;
+  }
 }
-/* @media (max-width: 1320px) */
+/* @media (max-width: 1240px) */
 /* @media (max-width: 960px) */
 @media (max-width: 960px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .section-hero__santa {
+    margin-top: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: static;
+    position: relative;
     width: auto;
     height: 316px;
+    right: auto;
   }
   .section-hero__santa img {
     width: auto;
     height: 100%;
     object-fit: cover;
   }
+  .section-hero__santa-cloud {
+    top: 130px;
+    left: 50%;
+    transform: translate(-120%, 0);
+    width: 160px;
+  }
+  .section-hero__santa-text {
+    font-size: 11px;
+  }
+  .section-hero__snowflake {
+    width: 225px;
+    height: 225px;
+    left: -100px;
+  }
 
   .section-title {
-    margin-top: 200px;
+    margin-top: 150px;
+  }
+  .section-title__arrow {
+    display: none;
   }
 }
 /* @media (max-width: 768px) */
 @media (max-width: 768px) {
   h1 {
-    font-size: calc(44px + (20 + 20 * 0.7) * ((100vw - 320px) / 1380));
+    font-size: calc(42px + (30 + 30 * 0.7) * ((100vw - 320px) / 1380));
+  }
+
+  h2 {
+    font-size: calc(42px + (14 + 14 * 0.7) * ((100vw - 320px) / 1380));
   }
 
   .section-title__subtitle {
-    font-size: calc(44px + (20 + 20 * 0.7) * ((100vw - 320px) / 1380));
+    font-size: calc(22px + (16 + 16 * 0.7) * ((100vw - 320px) / 1380));
+  }
+
+  .section-hero__snowflake {
+    display: none;
   }
 }
 /* @media (max-width: 520px) */
+@media (max-width: 520px) {
+  .section-hero__santa-cloud {
+    width: 125px;
+  }
+  .section-hero__santa-text {
+    font-size: 9px;
+  }
+}
 /* @media (max-width: 320px) */
 @media (max-width: 320px) {
   h1 {
-    font-size: 44px;
+    font-size: 42px;
+  }
+
+  .section-title__subtitle {
+    font-size: 22px;
   }
 }
