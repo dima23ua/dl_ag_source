@@ -1397,9 +1397,7 @@ select {
   bottom: -20px;
   width: 447px;
   height: 448px;
-  -webkit-animation: rotate 45s linear infinite;
-          animation: rotate 45s linear infinite;
-  z-index: 3;
+  z-index: 10;
   -webkit-transition: -webkit-transform 0.5s ease-out;
   transition: -webkit-transform 0.5s ease-out;
   transition: transform 0.5s ease-out;
@@ -2223,6 +2221,12 @@ section {
     overflow-x: hidden;
   }
 
+  .swiper-backface-hidden .swiper-slide {
+    -webkit-transform: none !important;
+        -ms-transform: none !important;
+            transform: none !important;
+  }
+
   section {
     height: 100vh !important;
   }
@@ -2290,6 +2294,9 @@ section {
   .swiper-wrapper {
     display: block;
     height: auto;
+    -webkit-transform: none !important;
+        -ms-transform: none !important;
+            transform: none !important;
   }
 
   .section-hero__santa {
