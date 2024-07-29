@@ -17,7 +17,7 @@
 }
 
 /**
- * Swiper 11.1.5
+ * Swiper 11.1.8
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -25,7 +25,7 @@
  *
  * Released under the MIT License
  *
- * Released on: July 15, 2024
+ * Released on: July 26, 2024
  */
 
 @font-face {
@@ -1670,7 +1670,7 @@ select {
 .star {
   position: absolute;
   border-radius: 50%;
-  background: url("../img/img/star.svg") no-repeat center center;
+  background: url("../img/svg/star.svg") no-repeat center center;
   background-size: cover;
   -webkit-animation: randomBlink 2s linear infinite;
           animation: randomBlink 2s linear infinite;
@@ -1939,7 +1939,7 @@ section {
   right: 20px;
   width: 18px;
   height: 10px;
-  background: url("../img/img/arrow-bottom.svg") no-repeat center top/cover;
+  background: url("../img/svg/arrow-bottom.svg") no-repeat center top/cover;
 }
 
 .smooth-header.active:after {
