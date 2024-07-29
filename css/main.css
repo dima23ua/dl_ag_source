@@ -1397,6 +1397,8 @@ select {
   bottom: -20px;
   width: 447px;
   height: 448px;
+  -webkit-animation: rotate 45s linear infinite;
+          animation: rotate 45s linear infinite;
   z-index: 10;
   -webkit-transition: -webkit-transform 0.5s ease-out;
   transition: -webkit-transform 0.5s ease-out;
