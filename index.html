@@ -3,11 +3,11 @@
 
 <head>
    <!-- Все мета теги не пишу так как работаю с вордпресс. Для этого есть свои функции и плагины -->
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/main.min.css?_v=20240729114006">
-	<title>Main Page - Coca-Cola</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/main.min.css?_v=20240729114006">
+   <title>Main Page - Coca-Cola</title>
 </head>
 
 <body>
@@ -16,270 +16,302 @@
 
       <!-- header -->
       <header class="header" id="header">
-   <div class="container">
+         <div class="container">
 
-      <div class="header-content">
-         <!--  logo -->
-         <a href="/" class="header-content__logo" aria-label="Coca-Cola homepage">
-            <img src="img/img/logo.svg" width="198" height="65" alt="caca-cola logo" title="Coca-Cola">
-         </a>
-         <div class="header-content__menu">
-            <!-- navigation menu -->
-            <nav class="navigation">
-               <ul class="navigation__list">
-                  <li>
-                     <a href="#first" data-text="Main">Main</a>
-                  </li>
-                  <li>
-                     <a href="#secont" data-text="About">About</a>
-                  </li>
-                  <li>
-                     <a href="#third" data-text="Products">Products</a>
-                  </li>
-                  <li>
-                     <a href="#second" data-text="Contacts">Contacts</a>
-                  </li>
-               </ul>
-            </nav>
-
-            <!-- burger menu -->
-            <button class="burger">
-               <a href="#mobile-menu" role="button" class="burger__menu popup-link" aria-label="Toggle Mobile Menu">
-                  <span></span>
+            <div class="header-content">
+               <!--  logo -->
+               <a href="/" class="header-content__logo" aria-label="Coca-Cola homepage">
+                  <img src="img/img/logo.svg" width="198" height="65" alt="caca-cola logo" title="Coca-Cola">
                </a>
-            </button>
+               <div class="header-content__menu">
+                  <!-- navigation menu -->
+                  <nav class="navigation">
+                     <ul class="navigation__list">
+                        <li>
+                           <a href="#first" data-text="Main">Main</a>
+                        </li>
+                        <li>
+                           <a href="#secont" data-text="About">About</a>
+                        </li>
+                        <li>
+                           <a href="#third" data-text="Products">Products</a>
+                        </li>
+                        <li>
+                           <a href="#second" data-text="Contacts">Contacts</a>
+                        </li>
+                     </ul>
+                  </nav>
+
+                  <!-- burger menu -->
+                  <button class="burger">
+                     <a href="#mobile-menu" role="button" class="burger__menu popup-link"
+                        aria-label="Toggle Mobile Menu">
+                        <span></span>
+                     </a>
+                  </button>
+               </div>
+
+            </div>
+
          </div>
-
-      </div>
-
-   </div>
-</header>
+      </header>
 
       <!-- main content -->
       <main class="main">
          <!-- slider swiper -->
-<div class="slider swiper-content">
-   <div class="slider__wrapper swiper-wrapper">
-      <section class="slider__slide section-hero swiper-slide" id="first">
-         <div class="section-hero__snowflake" id="paralax">
-            <img src="img/img/snowflake.svg" width="447" height="448" alt="snowflake icon" title="snowflake">
-         </div>
-         <!-- text content for first section -->
-         <div class="container">
-            <div class="section-title">
-               <div class="section-title__body">
-                  <h1 class="section-title__title">Main Site Title</h1>
-                  <div class="section-title__subtitle">Lorem ipsum descripsum</div>
-                  <div class="section-title__btn">
-                     <!-- Primary Btn -->
-                     <div class="primary-btn">
-                        <a href="#third" class="primary-btn__link" aria-label="Call to action">Call to action</a>
-                     </div>
+         <div class="slider swiper-content">
+            <div class="slider__wrapper swiper-wrapper">
+               <section class="slider__slide section-hero swiper-slide" id="first">
+                  <div class="section-hero__snowflake" id="paralax">
+                     <img src="img/img/snowflake.svg" width="447" height="448" alt="snowflake icon" title="snowflake">
                   </div>
-                  <a href="#second" class="section-title__arrow" aria-label="Scroll down to the next section">
-                     <img src="img/img/arrow.svg" width="24" height="24" alt="Arrow icon" title="Arrow">
-                  </a>
-               </div>
-            </div>
-         </div>
-
-         <div class="section-hero__santa">
-            <div class="section-hero__santa-cloud anim-items anim-no-hide">
-               <img src="img/img/cloud.svg" width="260" height="166" alt="" title="">
-               <div class="section-hero__santa-text"> How how how !!! Like it? Scroll down for more !</div>
-            </div>
-            <img src="img/img/santa.png" class="section-hero__santa-img" width="1000" height="581" alt="santa image"
-               title="Santa Claus">
-         </div>
-
-         <div class="stars" id="stars"></div>
-      </section>
-
-      <section class="slider__slide section-second swiper-slide" id="second">
-         <div class="section-bg">
-            <picture><source srcset="img/img/second-bg.webp" type="image/webp"><img src="img/img/second-bg.jpg" width="1496" height="935" alt="town and mountain" title="Second Section Backgound"></picture>
-         </div>
-
-         <div class="container">
-            <div class="section-title">
-
-               <div class="section-title__tabs-wrapper">
-                  <div class="section-title__text">
-                     <h2 class="section-title__title">At least somewhere you can feel new year atmosphere</h2>
-                     <div class="section-title__subtitle">Choose your present:</div>
-
-                     <div class="section-title__tab tab">
-                        <div class="tab__item tab-button tab-active" data-tab-name="sock">
-                           <picture><source srcset="img/img/new-year-sock-1.webp" type="image/webp"><img src="img/img/new-year-sock-1.png" width="69" height="121" alt="sock image" title=""></picture>
-                        </div>
-
-                        <div class="tab__item tab-button" data-tab-name="caps">
-                           <picture><source srcset="img/img/new-year-sock-2.webp" type="image/webp"><img src="img/img/new-year-sock-2.png" width="123" height="93" alt="cap image" title=""></picture>
-                        </div>
-
-                        <div class="tab__item tab-button" data-tab-name="back">
-                           <picture><source srcset="img/img/new-year-sock-3.webp" type="image/webp"><img src="img/img/new-year-sock-3.png" width="100" height="100" alt="back image" title=""></picture>
+                  <!-- text content for first section -->
+                  <div class="container">
+                     <div class="section-title">
+                        <div class="section-title__body">
+                           <h1 class="section-title__title">Main Site Title</h1>
+                           <div class="section-title__subtitle">Lorem ipsum descripsum</div>
+                           <div class="section-title__btn">
+                              <!-- Primary Btn -->
+                              <div class="primary-btn">
+                                 <a href="#third" class="primary-btn__link" aria-label="Call to action">Call to
+                                    action</a>
+                              </div>
+                           </div>
+                           <a href="#second" class="section-title__arrow" aria-label="Scroll down to the next section">
+                              <img src="img/img/arrow.svg" width="24" height="24" alt="Arrow icon" title="Arrow">
+                           </a>
                         </div>
                      </div>
                   </div>
 
-                  <div class="section-title__blocks block">
-                     <div class="block__item tab-block tab-active sock">
-                        <div class="block__inner">
-                           <div class="block__text">
-                              <h3 class="block__text-title">Best sock ever</h3>
-                              <div class="block__text-body">Reuglar sock have no present inside Lorem Ipsum is simply
-                                 dumm y
-                                 text of the printing and types etting industry. Lorem</div>
-                           </div>
-                           <div class="block__img">
-                              <picture><source srcset="img/img/new-year-sock-1.webp" type="image/webp"><img src="img/img/new-year-sock-1.png" width="70" height="120" alt="" title=""></picture>
-                           </div>
-                        </div>
+                  <div class="section-hero__santa">
+                     <div class="section-hero__santa-cloud anim-items anim-no-hide">
+                        <img src="img/img/cloud.svg" width="260" height="166" alt="" title="">
+                        <div class="section-hero__santa-text"> How how how !!! Like it? Scroll down for more !</div>
                      </div>
+                     <img src="img/img/santa.png" class="section-hero__santa-img" width="1000" height="581"
+                        alt="santa image" title="Santa Claus">
+                  </div>
 
-                     <div class="block__item tab-block caps">
-                        <div class="block__inner">
-                           <div class="block__text">
-                              <h3 class="block__text-title">Best sock ever2</h3>
-                              <div class="block__text-body">Reuglar sock have no present inside Lorem Ipsum is simply
-                                 dumm y
-                                 text of the printing and types etting industry. Lorem</div>
+                  <div class="stars" id="stars"></div>
+               </section>
+
+               <section class="slider__slide section-second swiper-slide" id="second">
+                  <div class="section-bg">
+                     <picture>
+                        <source srcset="img/img/second-bg.webp" type="image/webp"><img src="img/img/second-bg.jpg"
+                           width="1496" height="935" alt="town and mountain" title="Second Section Backgound">
+                     </picture>
+                  </div>
+
+                  <div class="container">
+                     <div class="section-title">
+
+                        <div class="section-title__tabs-wrapper">
+                           <div class="section-title__text">
+                              <h2 class="section-title__title">At least somewhere you can feel new year atmosphere</h2>
+                              <div class="section-title__subtitle">Choose your present:</div>
+
+                              <div class="section-title__tab tab">
+                                 <div class="tab__item tab-button tab-active" data-tab-name="sock">
+                                    <picture>
+                                       <source srcset="img/img/new-year-sock-1.webp" type="image/webp"><img
+                                          src="img/img/new-year-sock-1.png" width="69" height="121" alt="sock image"
+                                          title="">
+                                    </picture>
+                                 </div>
+
+                                 <div class="tab__item tab-button" data-tab-name="caps">
+                                    <picture>
+                                       <source srcset="img/img/new-year-sock-2.webp" type="image/webp"><img
+                                          src="img/img/new-year-sock-2.png" width="123" height="93" alt="cap image"
+                                          title="">
+                                    </picture>
+                                 </div>
+
+                                 <div class="tab__item tab-button" data-tab-name="back">
+                                    <picture>
+                                       <source srcset="img/img/new-year-sock-3.webp" type="image/webp"><img
+                                          src="img/img/new-year-sock-3.png" width="100" height="100" alt="back image"
+                                          title="">
+                                    </picture>
+                                 </div>
+                              </div>
                            </div>
-                           <div class="block__img">
-                              <picture><source srcset="img/img/new-year-sock-2.webp" type="image/webp"><img src="img/img/new-year-sock-2.png" width="" height="" alt="" title=""></picture>
+
+                           <div class="section-title__blocks block">
+                              <div class="block__item tab-block tab-active sock">
+                                 <div class="block__inner">
+                                    <div class="block__text">
+                                       <h3 class="block__text-title">Best sock ever</h3>
+                                       <div class="block__text-body">Reuglar sock have no present inside Lorem Ipsum is
+                                          simply
+                                          dumm y
+                                          text of the printing and types etting industry. Lorem</div>
+                                    </div>
+                                    <div class="block__img">
+                                       <picture>
+                                          <source srcset="img/img/new-year-sock-1.webp" type="image/webp"><img
+                                             src="img/img/new-year-sock-1.png" width="70" height="120" alt="" title="">
+                                       </picture>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="block__item tab-block caps">
+                                 <div class="block__inner">
+                                    <div class="block__text">
+                                       <h3 class="block__text-title">Best sock ever2</h3>
+                                       <div class="block__text-body">Reuglar sock have no present inside Lorem Ipsum is
+                                          simply
+                                          dumm y
+                                          text of the printing and types etting industry. Lorem</div>
+                                    </div>
+                                    <div class="block__img">
+                                       <picture>
+                                          <source srcset="img/img/new-year-sock-2.webp" type="image/webp"><img
+                                             src="img/img/new-year-sock-2.png" width="" height="" alt="" title="">
+                                       </picture>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="block__item tab-block back">
+                                 <div class="block__inner">
+                                    <div class="block__text">
+                                       <h3 class="block__text-title">Best sock ever3</h3>
+                                       <div class="block__text-body">Reuglar sock have no present inside Lorem Ipsum is
+                                          simply
+                                          dumm y
+                                          text of the printing and types etting industry. Lorem</div>
+                                    </div>
+                                    <div class="block__img">
+                                       <picture>
+                                          <source srcset="img/img/new-year-sock-3.webp" type="image/webp"><img
+                                             src="img/img/new-year-sock-3.png" width="" height="" alt="" title="">
+                                       </picture>
+                                    </div>
+                                 </div>
+                              </div>
                            </div>
                         </div>
+
                      </div>
-                     <div class="block__item tab-block back">
-                        <div class="block__inner">
-                           <div class="block__text">
-                              <h3 class="block__text-title">Best sock ever3</h3>
-                              <div class="block__text-body">Reuglar sock have no present inside Lorem Ipsum is simply
-                                 dumm y
-                                 text of the printing and types etting industry. Lorem</div>
-                           </div>
-                           <div class="block__img">
-                              <picture><source srcset="img/img/new-year-sock-3.webp" type="image/webp"><img src="img/img/new-year-sock-3.png" width="" height="" alt="" title=""></picture>
-                           </div>
+                  </div>
+               </section>
+
+               <section class="slider__slide section-third swiper-slide" id="third">
+                  <div class="section-bg">
+                     <picture>
+                        <source srcset="img/img/third-bg.webp" type="image/webp"><img src="img/img/third-bg.jpg"
+                           width="" height="" alt="" title="">
+                     </picture>
+                  </div>
+                  <div class="container">
+                     <div class="section-title">
+                        <div class="section-title__body">
+                           <h2 class="section-title__title">Write us <br> for real presents</h2>
+
+                           <!-- Form -->
+                           <form action="#" method="post" class="form" id="form">
+
+                              <!-- form input -->
+                              <div class="form__wrapper">
+                                 <div class="form__label-block">
+                                    <input class="form__input" placeholder="Name">
+                                 </div>
+
+                                 <div class="form__label-block">
+                                    <input class="form__input" placeholder="Phone">
+                                 </div>
+
+                                 <div class="form__label-block smooth-block">
+                                    <div class="form__input smooth-header" placeholder="Name">Gender</div>
+                                    <div class="form__list-block smooth-list">
+                                       <ul class="form__list">
+                                          <li class="form__item smooth-item">Boy</li>
+                                          <li class="form__item smooth-item">Girl</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+
+                                 <div class="form__label-block">
+                                    <input class="form__input" placeholder="Email">
+                                 </div>
+
+                                 <div class="form__label-block">
+                                    <textarea class="form__input" placeholder="Your witsh"></textarea>
+                                 </div>
+                              </div>
+
+                              <!-- checkbox -->
+                              <div class="checkbox">
+                                 <label class="checkbox__label">
+                                    <input type="checkbox" class="checkbox__input">
+                                    <span class="checkbox__span"></span>
+                                    <div>Whant Coca-cola with present ?</div>
+                                 </label>
+                              </div>
+
+                              <!-- button -->
+                              <div class="form__btn">
+                                 <div class="primary-btn">
+                                    <button aria-label="Send" class="primary-btn__link">Send</button>
+                                 </div>
+                              </div>
+                           </form>
                         </div>
                      </div>
                   </div>
-               </div>
 
+               </section>
             </div>
          </div>
-      </section>
-
-      <section class="slider__slide section-third swiper-slide" id="third">
-         <div class="section-bg">
-            <picture><source srcset="img/img/third-bg.webp" type="image/webp"><img src="img/img/third-bg.jpg" width="" height="" alt="" title=""></picture>
-         </div>
-         <div class="container">
-            <div class="section-title">
-               <div class="section-title__body">
-                  <h2 class="section-title__title">Write us <br> for real presents</h2>
-
-                  <!-- Form -->
-                  <form action="#" method="post" class="form" id="form">
-
-                     <!-- form input -->
-                     <div class="form__wrapper">
-                        <div class="form__label-block">
-                           <input class="form__input" placeholder="Name">
-                        </div>
-
-                        <div class="form__label-block">
-                           <input class="form__input" placeholder="Phone">
-                        </div>
-
-                        <div class="form__label-block smooth-block">
-                           <div class="form__input smooth-header" placeholder="Name">Gender</div>
-                           <div class="form__list-block smooth-list">
-                              <ul class="form__list">
-                                 <li class="form__item smooth-item">Boy</li>
-                                 <li class="form__item smooth-item">Girl</li>
-                              </ul>
-                           </div>
-                        </div>
-
-                        <div class="form__label-block">
-                           <input class="form__input" placeholder="Email">
-                        </div>
-
-                        <div class="form__label-block">
-                           <textarea class="form__input" placeholder="Your witsh"></textarea>
-                        </div>
-                     </div>
-
-                     <!-- checkbox -->
-                     <div class="checkbox">
-                        <label class="checkbox__label">
-                           <input type="checkbox" class="checkbox__input">
-                           <span class="checkbox__span"></span>
-                           <div>Whant Coca-cola with present ?</div>
-                        </label>
-                     </div>
-
-                     <!-- button -->
-                     <div class="form__btn">
-                        <div class="primary-btn">
-                           <button aria-label="Send" class="primary-btn__link">Send</button>
-                        </div>
-                     </div>
-                  </form>
-               </div>
-            </div>
-         </div>
-
-      </section>
-   </div>
-</div>
       </main>
 
       <!-- footer -->
       <footer class="footer">
-	<div class="container">
+         <div class="container">
 
-		
+            <!-- footer content -->
 
-	</div>
-</footer>
+         </div>
+      </footer>
 
 
 
       <!-- popup -->
-<div class="popup-wrapper menu-mobile" id="mobile-menu">
-   <div class="popup-wrapper__container menu-mobile__container">
+      <div class="popup-wrapper menu-mobile" id="mobile-menu">
+         <div class="popup-wrapper__container menu-mobile__container">
 
-      <div class="popup popup-container">
+            <div class="popup popup-container">
 
-         <!-- close popup -->
-         <div class="popup__close">
-            <a href="#header" class="popup__close-link close-popup"></a>
-         </div>
+               <!-- close popup -->
+               <div class="popup__close">
+                  <a href="#header" class="popup__close-link close-popup"></a>
+               </div>
 
-         <!-- popup content -->
-         <div class="mobile-menu">
-            <ul class="mobile-menu__list">
-               <li>
-                  <a href="#first" data-text="Main">Main</a>
-               </li>
-               <li>
-                  <a href="#second" data-text="About">About</a>
-               </li>
-               <li>
-                  <a href="#third" data-text="Products">Products</a>
-               </li>
-               <li>
-                  <a href="#second" data-text="Contacts">Contacts</a>
-               </li>
-            </ul>
+               <!-- popup content -->
+               <div class="mobile-menu">
+                  <ul class="mobile-menu__list">
+                     <li>
+                        <a href="#first" data-text="Main">Main</a>
+                     </li>
+                     <li>
+                        <a href="#second" data-text="About">About</a>
+                     </li>
+                     <li>
+                        <a href="#third" data-text="Products">Products</a>
+                     </li>
+                     <li>
+                        <a href="#second" data-text="Contacts">Contacts</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+
          </div>
       </div>
-
-   </div>
-</div>
 
    </div>
    <script src="js/app.min.js?_v=20240729114006"></script>

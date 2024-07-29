@@ -1659,7 +1659,7 @@ select {
 .star {
   position: absolute;
   border-radius: 50%;
-  background: url("../../img/img/star.svg") no-repeat center center;
+  background: url("../img/img/star.svg") no-repeat center center;
   background-size: cover;
   -webkit-animation: randomBlink 2s linear infinite;
           animation: randomBlink 2s linear infinite;
@@ -1969,7 +1969,7 @@ section {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background: url("../../img/svg/check.svg") no-repeat center top/cover;
+  background: url("../img/svg/check.svg") no-repeat center top/cover;
   z-index: 2;
 }
 
