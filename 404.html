@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
+   <!-- Все мета теги не пишу так как работаю с вордпресс. Для этого есть свои функции и плагины -->
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="files/favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/main.min.css?_v=20240729114006">
 	<title>...</title>
 </head>
 
@@ -14,13 +14,14 @@
    <div class="wrapper">
 
       <!-- header -->
-      <header class="header lock-padding" id="header">
+      <header class="header" id="header">
    <div class="container">
 
       <div class="header-content">
-         <div class="header-content__logo">
+         <!--  logo -->
+         <a href="/" class="header-content__logo" aria-label="Coca-Cola homepage">
             <img src="img/img/logo.svg" width="198" height="65" alt="caca-cola logo" title="Coca-Cola">
-         </div>
+         </a>
          <div class="header-content__menu">
             <!-- navigation menu -->
             <nav class="navigation">
@@ -29,22 +30,22 @@
                      <a href="#first" data-text="Main">Main</a>
                   </li>
                   <li>
-                     <a href="#about" data-text="About">About</a>
+                     <a href="#secont" data-text="About">About</a>
                   </li>
                   <li>
-                     <a href="#products" data-text="Products">Products</a>
+                     <a href="#third" data-text="Products">Products</a>
                   </li>
                   <li>
-                     <a href="#contacts" data-text="Contacts">Contacts</a>
+                     <a href="#second" data-text="Contacts">Contacts</a>
                   </li>
                </ul>
             </nav>
 
             <!-- burger menu -->
-            <button class="burger" role="button" aria-label="Открыть мобильное меню">
-               <div class="burger__menu">
+            <button class="burger">
+               <a href="#mobile-menu" role="button" class="burger__menu popup-link" aria-label="Toggle Mobile Menu">
                   <span></span>
-               </div>
+               </a>
             </button>
          </div>
 
@@ -82,7 +83,7 @@
 
 
    </div>
-   <script src="js/app.min.js"></script>
+   <script src="js/app.min.js?_v=20240729114006"></script>
 </body>
 
 </html>
