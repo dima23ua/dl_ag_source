@@ -6,7 +6,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/main.min.css?_v=20240730002026">
+   <link rel="stylesheet" href="css/main.min.css?_v=20240730005441">
    <title>Main Page - Coca-Cola</title>
 </head>
 
@@ -21,7 +21,7 @@
             <div class="header-content">
                <!--  logo -->
                <a href="/" class="header-content__logo" aria-label="Coca-Cola homepage">
-                  <img src="img/svg/logo.svg" width="198" height="65" alt="caca-cola logo" title="Coca-Cola">
+                  <img src="img/img/logo.svg" width="198" height="65" alt="caca-cola logo">
                </a>
                <div class="header-content__menu">
                   <!-- navigation menu -->
@@ -65,7 +65,7 @@
                <section class="slider__slide section-hero swiper-slide" id="first">
                   <!-- animation and paralax snowflake -->
                   <div class="section-hero__snowflake" data-swiper-parallax="70%" data-swiper-parallax-duration="1100">
-                     <img src="img/svg/snowflake.svg" width="447" height="448" alt="snowflake icon" title="snowflake">
+                     <img src="img/img/snowflake.svg" width="447" height="448" alt="snowflake icon">
                   </div>
                   <!-- text content for first section -->
                   <div class="container">
@@ -82,7 +82,7 @@
                            </div>
                            <!-- arrow to next section -->
                            <a href="#second" class="section-title__arrow" aria-label="Scroll down to the next section">
-                              <img src="img/svg/arrow.svg" width="24" height="24" alt="Arrow icon" title="Arrow">
+                              <img src="img/img/arrow.svg" width="24" height="24" alt="Arrow icon">
                            </a>
                         </div>
                      </div>
@@ -90,11 +90,13 @@
                   <!-- santa's image -->
                   <div class="section-hero__santa">
                      <div class="section-hero__santa-cloud anim-items anim-no-hide">
-                        <img src="img/svg/cloud.svg" width="260" height="166" alt="" title="">
+                        <img src="img/img/cloud.svg" width="260" height="166" alt="">
                         <div class="section-hero__santa-text"> How how how !!! Like it? Scroll down for more !</div>
                      </div>
-                     <img src="img/img/santa.png" class="section-hero__santa-img" width="1000" height="581"
-                        alt="santa image" title="Santa Claus">
+                     <picture>
+                        <source srcset="img/img/santa.webp" type="image/webp"><img src="img/img/santa.png"
+                           class="section-hero__santa-img" width="1000" height="581" alt="santa image">
+                     </picture>
                   </div>
                   <!-- block for stars animation -->
                   <div class="stars" id="stars"></div>
@@ -104,8 +106,10 @@
                <section class="slider__slide section-second swiper-slide" id="second">
                   <!-- background for section -->
                   <div class="section-bg">
-                     <img src="img/img/second-bg.jpg" width="1496" height="935" alt="town and mountain"
-                        title="Second Section Backgound">
+                     <picture>
+                        <source srcset="img/img/second-bg.webp" type="image/webp"><img src="img/img/second-bg.jpg"
+                           width="1496" height="935" alt="town and mountain">
+                     </picture>
                   </div>
                   <!-- text content for second section -->
                   <div class="container">
@@ -120,24 +124,21 @@
                                  <div class="tab__item tab-button tab-active" data-tab-name="sock">
                                     <picture>
                                        <source srcset="img/img/new-year-sock-1.webp" type="image/webp"><img
-                                          src="img/img/new-year-sock-1.png" width="69" height="121" alt="sock image"
-                                          title="">
+                                          src="img/img/new-year-sock-1.png" width="69" height="121" alt="sock image">
                                     </picture>
                                  </div>
 
                                  <div class="tab__item tab-button" data-tab-name="caps">
                                     <picture>
                                        <source srcset="img/img/new-year-sock-2.webp" type="image/webp"><img
-                                          src="img/img/new-year-sock-2.png" width="123" height="93" alt="cap image"
-                                          title="">
+                                          src="img/img/new-year-sock-2.png" width="123" height="93" alt="cap image">
                                     </picture>
                                  </div>
 
                                  <div class="tab__item tab-button" data-tab-name="back">
                                     <picture>
                                        <source srcset="img/img/new-year-sock-3.webp" type="image/webp"><img
-                                          src="img/img/new-year-sock-3.png" width="100" height="100" alt="back image"
-                                          title="">
+                                          src="img/img/new-year-sock-3.png" width="100" height="100" alt="back image">
                                     </picture>
                                  </div>
                               </div>
@@ -156,8 +157,11 @@
                                           text of the printing and types etting industry. Lorem</div>
                                     </div>
                                     <div class="block__img">
-                                       <img src="img/img/new-year-sock-1.png" width="70" height="120"
-                                          alt="sock in first tab" title="">
+                                       <picture>
+                                          <source srcset="img/img/new-year-sock-1.webp" type="image/webp"><img
+                                             src="img/img/new-year-sock-1.png" width="70" height="120"
+                                             alt="sock in first tab">
+                                       </picture>
                                     </div>
                                  </div>
                               </div>
@@ -172,8 +176,11 @@
                                           text of the printing and types etting industry. Lorem</div>
                                     </div>
                                     <div class="block__img">
-                                       <img src="img/img/new-year-sock-2.png" width="123" height="93"
-                                          alt="cap in second tab" title="">
+                                       <picture>
+                                          <source srcset="img/img/new-year-sock-2.webp" type="image/webp"><img
+                                             src="img/img/new-year-sock-2.png" width="123" height="93"
+                                             alt="cap in second tab">
+                                       </picture>
                                     </div>
                                  </div>
                               </div>
@@ -188,8 +195,11 @@
                                           text of the printing and types etting industry. Lorem</div>
                                     </div>
                                     <div class="block__img">
-                                       <img src="img/img/new-year-sock-3.png" width="100" height="100"
-                                          alt="bag in third tab" title="">
+                                       <picture>
+                                          <source srcset="img/img/new-year-sock-3.webp" type="image/webp"><img
+                                             src="img/img/new-year-sock-3.png" width="100" height="100"
+                                             alt="bag in third tab">
+                                       </picture>
                                     </div>
                                  </div>
                               </div>
@@ -206,7 +216,7 @@
                   <div class="section-bg">
                      <picture>
                         <source srcset="img/img/third-bg.webp" type="image/webp"><img src="img/img/third-bg.jpg"
-                           width="1441" height="887" alt="deer in the snow" title="">
+                           width="1441" height="887" alt="deer in the snow">
                      </picture>
                   </div>
                   <!-- text content for third section -->
@@ -317,7 +327,7 @@
       </div>
 
    </div>
-   <script src="js/app.min.js?_v=20240730002026"></script>
+   <script src="js/app.min.js?_v=20240730005441"></script>
 </body>
 
 </html>
