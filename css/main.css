@@ -1424,16 +1424,28 @@ select {
 
 .section-hero__santa {
   position: absolute;
-  right: 0px;
+  right: 0;
   bottom: 0;
   width: 1000px;
   height: 581px;
   z-index: 3;
-  overflow: hidden;
+  -webkit-transform: translate(100%, 0);
+      -ms-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+  -webkit-transition: -webkit-transform 1.5s ease 0s;
+  transition: -webkit-transform 1.5s ease 0s;
+  transition: transform 1.5s ease 0s;
+  transition: transform 1.5s ease 0s, -webkit-transform 1.5s ease 0s;
 }
 
 .section-hero__santa > img {
   margin-left: 100px;
+}
+
+.section-hero__santa.active {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 .section-hero__santa-cloud {
